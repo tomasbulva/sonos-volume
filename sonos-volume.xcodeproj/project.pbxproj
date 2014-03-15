@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B2C1B618D494D500994EBE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89B2C1B518D494D500994EBE /* README.md */; };
 		B4E32469FF4445C7B2525747 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA99F6347E3748E9B9071838 /* libPods.a */; };
 		B76F62DD18D35F9100D797E4 /* status-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62DB18D35F9100D797E4 /* status-selected.png */; };
 		B76F62DE18D35F9100D797E4 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62DC18D35F9100D797E4 /* status.png */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		26CDC8E7383D4124ADE39569 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		89B2C1B518D494D500994EBE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		B76F62DB18D35F9100D797E4 /* status-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-selected.png"; sourceTree = "<group>"; };
 		B76F62DC18D35F9100D797E4 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
 		B76F62DF18D360D700D797E4 /* icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-16.png"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				B7B3740218C7EBD6004E4981 /* XMLReader.m */,
 				B76F62DB18D35F9100D797E4 /* status-selected.png */,
 				B76F62DC18D35F9100D797E4 /* status.png */,
+				89B2C1B518D494D500994EBE /* README.md */,
 				B7B373DF18C7EA0C004E4981 /* Images.xcassets */,
 				B7B373CE18C7EA0B004E4981 /* Supporting Files */,
 			);
@@ -225,6 +228,7 @@
 				B76F62E818D360D700D797E4 /* icon-500.png in Resources */,
 				B7B373E018C7EA0C004E4981 /* Images.xcassets in Resources */,
 				B7B373D818C7EA0B004E4981 /* Credits.rtf in Resources */,
+				89B2C1B618D494D500994EBE /* README.md in Resources */,
 				B76F62EC18D3616700D797E4 /* icon-64.png in Resources */,
 				B7B373DE18C7EA0C004E4981 /* MainMenu.xib in Resources */,
 				B76F62DE18D35F9100D797E4 /* status.png in Resources */,
