@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4E32469FF4445C7B2525747 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA99F6347E3748E9B9071838 /* libPods.a */; };
+		B76F62DD18D35F9100D797E4 /* status-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62DB18D35F9100D797E4 /* status-selected.png */; };
+		B76F62DE18D35F9100D797E4 /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62DC18D35F9100D797E4 /* status.png */; };
+		B76F62E418D360D700D797E4 /* icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62DF18D360D700D797E4 /* icon-16.png */; };
+		B76F62E518D360D700D797E4 /* icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E018D360D700D797E4 /* icon-32.png */; };
+		B76F62E618D360D700D797E4 /* icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E118D360D700D797E4 /* icon-128.png */; };
+		B76F62E718D360D700D797E4 /* icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E218D360D700D797E4 /* icon-256.png */; };
+		B76F62E818D360D700D797E4 /* icon-500.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E318D360D700D797E4 /* icon-500.png */; };
+		B76F62EA18D3611C00D797E4 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E918D3611C00D797E4 /* icon-512.png */; };
+		B76F62EC18D3616700D797E4 /* icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62EB18D3616700D797E4 /* icon-64.png */; };
+		B7B373C818C7EA0B004E4981 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B373C718C7EA0B004E4981 /* Cocoa.framework */; };
+		B7B373D218C7EA0B004E4981 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7B373D018C7EA0B004E4981 /* InfoPlist.strings */; };
+		B7B373D418C7EA0B004E4981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B373D318C7EA0B004E4981 /* main.m */; };
+		B7B373D818C7EA0B004E4981 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7B373D618C7EA0B004E4981 /* Credits.rtf */; };
+		B7B373DB18C7EA0B004E4981 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B373DA18C7EA0B004E4981 /* AppDelegate.m */; };
+		B7B373DE18C7EA0C004E4981 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B373DC18C7EA0C004E4981 /* MainMenu.xib */; };
+		B7B373E018C7EA0C004E4981 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B373DF18C7EA0C004E4981 /* Images.xcassets */; };
+		B7B3740318C7EBD6004E4981 /* SonosController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B373FC18C7EBD6004E4981 /* SonosController.m */; };
+		B7B3740418C7EBD6004E4981 /* SonosDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B373FE18C7EBD6004E4981 /* SonosDiscover.m */; };
+		B7B3740518C7EBD6004E4981 /* SonosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B3740018C7EBD6004E4981 /* SonosManager.m */; };
+		B7B3740618C7EBD6004E4981 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B3740218C7EBD6004E4981 /* XMLReader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26CDC8E7383D4124ADE39569 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B76F62DB18D35F9100D797E4 /* status-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-selected.png"; sourceTree = "<group>"; };
+		B76F62DC18D35F9100D797E4 /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		B76F62DF18D360D700D797E4 /* icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-16.png"; sourceTree = "<group>"; };
+		B76F62E018D360D700D797E4 /* icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-32.png"; sourceTree = "<group>"; };
+		B76F62E118D360D700D797E4 /* icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-128.png"; sourceTree = "<group>"; };
+		B76F62E218D360D700D797E4 /* icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-256.png"; sourceTree = "<group>"; };
+		B76F62E318D360D700D797E4 /* icon-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-500.png"; sourceTree = "<group>"; };
+		B76F62E918D3611C00D797E4 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
+		B76F62EB18D3616700D797E4 /* icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-64.png"; sourceTree = "<group>"; };
+		B7B373C418C7EA0B004E4981 /* sonos-volume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sonos-volume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B373C718C7EA0B004E4981 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B7B373CA18C7EA0B004E4981 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B7B373CB18C7EA0B004E4981 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B7B373CC18C7EA0B004E4981 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7B373CF18C7EA0B004E4981 /* sonos-volume-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sonos-volume-Info.plist"; sourceTree = "<group>"; };
+		B7B373D118C7EA0B004E4981 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7B373D318C7EA0B004E4981 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7B373D518C7EA0B004E4981 /* sonos-volume-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sonos-volume-Prefix.pch"; sourceTree = "<group>"; };
+		B7B373D718C7EA0B004E4981 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B7B373D918C7EA0B004E4981 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7B373DA18C7EA0B004E4981 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7B373DD18C7EA0C004E4981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B7B373DF18C7EA0C004E4981 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B7B373E618C7EA0C004E4981 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B7B373FB18C7EBD6004E4981 /* SonosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonosController.h; sourceTree = "<group>"; };
+		B7B373FC18C7EBD6004E4981 /* SonosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonosController.m; sourceTree = "<group>"; };
+		B7B373FD18C7EBD6004E4981 /* SonosDiscover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonosDiscover.h; sourceTree = "<group>"; };
+		B7B373FE18C7EBD6004E4981 /* SonosDiscover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonosDiscover.m; sourceTree = "<group>"; };
+		B7B373FF18C7EBD6004E4981 /* SonosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonosManager.h; sourceTree = "<group>"; };
+		B7B3740018C7EBD6004E4981 /* SonosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonosManager.m; sourceTree = "<group>"; };
+		B7B3740118C7EBD6004E4981 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		B7B3740218C7EBD6004E4981 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		DA99F6347E3748E9B9071838 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7B373C118C7EA0B004E4981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B373C818C7EA0B004E4981 /* Cocoa.framework in Frameworks */,
+				B4E32469FF4445C7B2525747 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7B373BB18C7EA0B004E4981 = {
+			isa = PBXGroup;
+			children = (
+				B7B373CD18C7EA0B004E4981 /* sonos-volume */,
+				B7B373C618C7EA0B004E4981 /* Frameworks */,
+				B7B373C518C7EA0B004E4981 /* Products */,
+				26CDC8E7383D4124ADE39569 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B373C518C7EA0B004E4981 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7B373C418C7EA0B004E4981 /* sonos-volume.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7B373C618C7EA0B004E4981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B373C718C7EA0B004E4981 /* Cocoa.framework */,
+				B7B373E618C7EA0C004E4981 /* XCTest.framework */,
+				B7B373C918C7EA0B004E4981 /* Other Frameworks */,
+				DA99F6347E3748E9B9071838 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7B373C918C7EA0B004E4981 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7B373CA18C7EA0B004E4981 /* AppKit.framework */,
+				B7B373CB18C7EA0B004E4981 /* CoreData.framework */,
+				B7B373CC18C7EA0B004E4981 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B7B373CD18C7EA0B004E4981 /* sonos-volume */ = {
+			isa = PBXGroup;
+			children = (
+				B7B373D918C7EA0B004E4981 /* AppDelegate.h */,
+				B7B373DA18C7EA0B004E4981 /* AppDelegate.m */,
+				B7B373DC18C7EA0C004E4981 /* MainMenu.xib */,
+				B7B373FB18C7EBD6004E4981 /* SonosController.h */,
+				B7B373FC18C7EBD6004E4981 /* SonosController.m */,
+				B7B373FD18C7EBD6004E4981 /* SonosDiscover.h */,
+				B7B373FE18C7EBD6004E4981 /* SonosDiscover.m */,
+				B7B373FF18C7EBD6004E4981 /* SonosManager.h */,
+				B7B3740018C7EBD6004E4981 /* SonosManager.m */,
+				B7B3740118C7EBD6004E4981 /* XMLReader.h */,
+				B7B3740218C7EBD6004E4981 /* XMLReader.m */,
+				B76F62DB18D35F9100D797E4 /* status-selected.png */,
+				B76F62DC18D35F9100D797E4 /* status.png */,
+				B7B373DF18C7EA0C004E4981 /* Images.xcassets */,
+				B7B373CE18C7EA0B004E4981 /* Supporting Files */,
+			);
+			name = "sonos-volume";
+			path = "sonos-objc-test";
+			sourceTree = "<group>";
+		};
+		B7B373CE18C7EA0B004E4981 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B76F62EB18D3616700D797E4 /* icon-64.png */,
+				B76F62DF18D360D700D797E4 /* icon-16.png */,
+				B76F62E018D360D700D797E4 /* icon-32.png */,
+				B76F62E118D360D700D797E4 /* icon-128.png */,
+				B76F62E218D360D700D797E4 /* icon-256.png */,
+				B76F62E318D360D700D797E4 /* icon-500.png */,
+				B76F62E918D3611C00D797E4 /* icon-512.png */,
+				B7B373CF18C7EA0B004E4981 /* sonos-volume-Info.plist */,
+				B7B373D018C7EA0B004E4981 /* InfoPlist.strings */,
+				B7B373D318C7EA0B004E4981 /* main.m */,
+				B7B373D518C7EA0B004E4981 /* sonos-volume-Prefix.pch */,
+				B7B373D618C7EA0B004E4981 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7B373C318C7EA0B004E4981 /* sonos-volume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7B373F518C7EA0C004E4981 /* Build configuration list for PBXNativeTarget "sonos-volume" */;
+			buildPhases = (
+				F76CAD7F6A0C46F9986ACDCE /* Check Pods Manifest.lock */,
+				B7B373C018C7EA0B004E4981 /* Sources */,
+				B7B373C118C7EA0B004E4981 /* Frameworks */,
+				B7B373C218C7EA0B004E4981 /* Resources */,
+				51F050E2E68349FA8B3FC9EB /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sonos-volume";
+			productName = "sonos-objc-test";
+			productReference = B7B373C418C7EA0B004E4981 /* sonos-volume.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7B373BC18C7EA0B004E4981 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tomas Bulva";
+			};
+			buildConfigurationList = B7B373BF18C7EA0B004E4981 /* Build configuration list for PBXProject "sonos-volume" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7B373BB18C7EA0B004E4981;
+			productRefGroup = B7B373C518C7EA0B004E4981 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7B373C318C7EA0B004E4981 /* sonos-volume */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7B373C218C7EA0B004E4981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76F62E418D360D700D797E4 /* icon-16.png in Resources */,
+				B76F62E518D360D700D797E4 /* icon-32.png in Resources */,
+				B76F62E618D360D700D797E4 /* icon-128.png in Resources */,
+				B76F62DD18D35F9100D797E4 /* status-selected.png in Resources */,
+				B76F62E718D360D700D797E4 /* icon-256.png in Resources */,
+				B76F62EA18D3611C00D797E4 /* icon-512.png in Resources */,
+				B7B373D218C7EA0B004E4981 /* InfoPlist.strings in Resources */,
+				B76F62E818D360D700D797E4 /* icon-500.png in Resources */,
+				B7B373E018C7EA0C004E4981 /* Images.xcassets in Resources */,
+				B7B373D818C7EA0B004E4981 /* Credits.rtf in Resources */,
+				B76F62EC18D3616700D797E4 /* icon-64.png in Resources */,
+				B7B373DE18C7EA0C004E4981 /* MainMenu.xib in Resources */,
+				B76F62DE18D35F9100D797E4 /* status.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F050E2E68349FA8B3FC9EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76CAD7F6A0C46F9986ACDCE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7B373C018C7EA0B004E4981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B373DB18C7EA0B004E4981 /* AppDelegate.m in Sources */,
+				B7B373D418C7EA0B004E4981 /* main.m in Sources */,
+				B7B3740518C7EBD6004E4981 /* SonosManager.m in Sources */,
+				B7B3740318C7EBD6004E4981 /* SonosController.m in Sources */,
+				B7B3740618C7EBD6004E4981 /* XMLReader.m in Sources */,
+				B7B3740418C7EBD6004E4981 /* SonosDiscover.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7B373D018C7EA0B004E4981 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B373D118C7EA0B004E4981 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7B373D618C7EA0B004E4981 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B373D718C7EA0B004E4981 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B7B373DC18C7EA0C004E4981 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7B373DD18C7EA0C004E4981 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7B373F318C7EA0C004E4981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B7B373F418C7EA0C004E4981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B7B373F618C7EA0C004E4981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CDC8E7383D4124ADE39569 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sonos-objc-test/sonos-volume-Prefix.pch";
+				INFOPLIST_FILE = "sonos-objc-test/sonos-volume-Info.plist";
+				PRODUCT_NAME = "sonos-volume";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B7B373F718C7EA0C004E4981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26CDC8E7383D4124ADE39569 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sonos-objc-test/sonos-volume-Prefix.pch";
+				INFOPLIST_FILE = "sonos-objc-test/sonos-volume-Info.plist";
+				PRODUCT_NAME = "sonos-volume";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7B373BF18C7EA0B004E4981 /* Build configuration list for PBXProject "sonos-volume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B373F318C7EA0C004E4981 /* Debug */,
+				B7B373F418C7EA0C004E4981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7B373F518C7EA0C004E4981 /* Build configuration list for PBXNativeTarget "sonos-volume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7B373F618C7EA0C004E4981 /* Debug */,
+				B7B373F718C7EA0C004E4981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7B373BC18C7EA0B004E4981 /* Project object */;
+}
