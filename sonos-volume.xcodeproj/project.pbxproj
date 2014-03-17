@@ -18,6 +18,7 @@
 		B76F62E818D360D700D797E4 /* icon-500.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E318D360D700D797E4 /* icon-500.png */; };
 		B76F62EA18D3611C00D797E4 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62E918D3611C00D797E4 /* icon-512.png */; };
 		B76F62EC18D3616700D797E4 /* icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F62EB18D3616700D797E4 /* icon-64.png */; };
+		B7A0896318D744BE0060E5CC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B7A0896218D744BE0060E5CC /* .gitignore */; };
 		B7B373C818C7EA0B004E4981 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B373C718C7EA0B004E4981 /* Cocoa.framework */; };
 		B7B373D218C7EA0B004E4981 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7B373D018C7EA0B004E4981 /* InfoPlist.strings */; };
 		B7B373D418C7EA0B004E4981 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B373D318C7EA0B004E4981 /* main.m */; };
@@ -43,6 +44,7 @@
 		B76F62E318D360D700D797E4 /* icon-500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-500.png"; sourceTree = "<group>"; };
 		B76F62E918D3611C00D797E4 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-512.png"; sourceTree = "<group>"; };
 		B76F62EB18D3616700D797E4 /* icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-64.png"; sourceTree = "<group>"; };
+		B7A0896218D744BE0060E5CC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B7B373C418C7EA0B004E4981 /* sonos-volume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sonos-volume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B373C718C7EA0B004E4981 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B7B373CA18C7EA0B004E4981 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 		B7B373BB18C7EA0B004E4981 = {
 			isa = PBXGroup;
 			children = (
+				B7A0896218D744BE0060E5CC /* .gitignore */,
 				B7B373CD18C7EA0B004E4981 /* sonos-volume */,
 				B7B373C618C7EA0B004E4981 /* Frameworks */,
 				B7B373C518C7EA0B004E4981 /* Products */,
@@ -228,6 +231,7 @@
 				B76F62E818D360D700D797E4 /* icon-500.png in Resources */,
 				B7B373E018C7EA0C004E4981 /* Images.xcassets in Resources */,
 				B7B373D818C7EA0B004E4981 /* Credits.rtf in Resources */,
+				B7A0896318D744BE0060E5CC /* .gitignore in Resources */,
 				89B2C1B618D494D500994EBE /* README.md in Resources */,
 				B76F62EC18D3616700D797E4 /* icon-64.png in Resources */,
 				B7B373DE18C7EA0C004E4981 /* MainMenu.xib in Resources */,
