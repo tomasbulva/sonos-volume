@@ -40,6 +40,7 @@ DerivedData/
 
 # NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
 
+# Xcode
 build/
 
 
@@ -60,8 +61,11 @@ build/
 *.perspectivev3
 #    NB: also, whitelist the default ones, some projects need to use these
 !default.pbxuser
+*.mode1v3
 !default.mode1v3
+*.mode2v3
 !default.mode2v3
+*.perspectivev3
 !default.perspectivev3
 
 
@@ -120,10 +124,16 @@ xcuserdata
 #
 # We're using source-control, so this is a "feature" that we do not want!
 
+*.xccheckout
+profile
 *.moved-aside
+DerivedData
+*.hmap
+*.ipa
 
 
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
-# ...none. Everything is now explained.
+# ...none. Everything is now explained.# CocoaPods
+Pods
