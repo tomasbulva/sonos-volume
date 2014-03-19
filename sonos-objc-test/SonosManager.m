@@ -28,6 +28,7 @@
         
         self.coordinators = [[NSMutableArray alloc] init];
         self.slaves = [[NSMutableArray alloc] init];
+        self.listOfRooms = [[NSMutableDictionary alloc] init];
         
         [SonosDiscover discoverControllers:^(NSArray *devices, NSError *error){
             
@@ -60,19 +61,27 @@
             // Find current device (this implementation may change in the future)
             if([[self allDevices] count] > 0) {
                 [self willChangeValueForKey:@"currentDevice"];
+                //[self willChangeValueForKey:@"listOfRooms"];
                 self.currentDevice = [self.coordinators objectAtIndex:0];
+                //self.listOfRooms = [self.coordinators objectAtIndex:0];
                 for(SonosController *controller in self.coordinators) {
                     // If a coordinator is playing, make it the current device
 //                    [controller playbackStatus:^(BOOL playing, NSDictionary *response, NSError *error){
 //                        if(playing) self.currentDevice = controller;
 //                    }];
-                    NSLog(@"controller: %@", controller.uuid);
+                    NSLog(@"controller uuid: %@", controller.uuid);
+                    NSLog(@"controller name: %@", controller.name);
+                    
+                    if([[controller.name lowercaseString] rangeOfString:@"bridge"].location == NSNotFound){
+                            [self.listOfRooms setObject: controller.uuid forKey: controller.name];
+                    }
 // change here
                     if([controller.uuid isEqualToString:@"RINCON_000E58B69DDE01400"]){
                         self.currentDevice = controller;
                     };
                 }
                 [self didChangeValueForKey:@"currentDevice"];
+                //[self didChangeValueForKey:@"listOfRooms"];
             }
             
             [self didChangeValueForKey:@"allDevices"];

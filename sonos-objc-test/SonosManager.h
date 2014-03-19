@@ -17,7 +17,7 @@
 
 // The "current" device, ie. the device that acts if we select "play" now
 @property (strong, readwrite, nonatomic) SonosController *currentDevice;
-@property (strong, readwrite, nonatomic) SonosController *listOfRooms;
+@property (strong, readwrite, nonatomic) NSMutableDictionary *listOfRooms;
 
 + (id)sharedInstance;
 

@@ -18,4 +18,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSSlider *SliderVolume;
+@property (weak) IBOutlet NSSegmentedControl *RoomSelector;
+
+
 @end

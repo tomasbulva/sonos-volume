@@ -15,43 +15,36 @@
 
 @synthesize window;
 @synthesize SliderVolume;
-
-//- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-//{
-//    
-//}
+@synthesize RoomSelector;
 
 -(void)awakeFromNib{
     [[SonosManager sharedInstance] addObserver:self forKeyPath:@"allDevices" options:NSKeyValueObservingOptionNew context:NULL];
+    
     NSImage *image = [NSImage imageNamed:@"status"];
 	NSImage *alternateImage = [NSImage imageNamed:@"status-selected"];
 	_statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-	
-	//[_statusItem setupView];
-    
 	[_statusItem setHighlightMode:YES];
-	
 	[_statusItem setImage:image];
 	[_statusItem setAlternateImage:alternateImage];
-    
     [_statusItem setEnabled: YES];
-    
-    [_statusItem setAction:@selector(findVolumeLevel)];
     [_statusItem setTarget: self];
     
-    
-    NSMenuItem *newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:NULL keyEquivalent:@""];
     NSMenu *newMenu = [[NSMenu allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom"];
-    // this menu item will have a view with a gradient backbround and a slider
-	newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom Item 3" action:nil keyEquivalent:@""];
-    [newItem setEnabled:YES];
-	[newItem setView:SliderVolume];
-    [newItem setTarget: self];
-    [newMenu addItem:newItem];
+    
+    NSMenuItem *newItem0 = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Sonos Rooms" action:nil keyEquivalent:@""];
+    
+    [newItem0 setEnabled:YES];
+	[newItem0 setView:RoomSelector];
+    [newItem0 setTarget: self];
+    [newMenu addItem:newItem0];
+    
+	NSMenuItem *newItem1 = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Volume Slider" action:nil keyEquivalent:@""];
+    [newItem1 setEnabled:YES];
+	[newItem1 setView:SliderVolume];
+    [newItem1 setTarget: self];
+    [newMenu addItem:newItem1];
     
 	[_statusItem setMenu:newMenu];
-    
-    
     
     // Start watching events to figure out when to close the window
     NSAssert(_eventMonitor == nil, @"_eventMonitor should not be created yet");
@@ -89,16 +82,33 @@
 //        if ([self.delegate respondsToSelector:@selector(didCancelColorTableController:)]) {
 //            [self.delegate didCancelColorTableController:self];
 //        }
+        NSMutableDictionary *rooms = [[SonosManager sharedInstance] listOfRooms];
+        NSLog(@"rooms %@",rooms);
+        
+        [RoomSelector setSegmentCount:[rooms count]];
+        [[RoomSelector cell] setTrackingMode:NSSegmentSwitchTrackingSelectOne];
+        int myCounter = 0;
+        for (NSString *roomName in rooms){
+            [RoomSelector setLabel:roomName forSegment:myCounter];
+            [RoomSelector setWidth: (195 / [rooms count]) forSegment:myCounter];
+            [RoomSelector setTarget:self];
+            [RoomSelector setAction: @selector(segControlClicked:)];
+            if(myCounter == 0) [RoomSelector setSelectedSegment: YES];
+            NSLog(@"index: %d, Key: %@, Value %@", myCounter, roomName, [rooms objectForKey: roomName]);
+            myCounter++;
+        }
+        
+        
         SonosController *controller = [[SonosManager sharedInstance] currentDevice];
         
         [controller getVolume:^(NSInteger volume, NSDictionary *response, NSError *error){
-            //NSLog(@"response: %@", response);
-            //NSLog(@"volume: %ld", (long)volume);
-            //NSLog(@"error: %@", error);
-            //[SliderVolume setValue:0.9 animated:YES];
             [self.SliderVolume setDoubleValue:volume];
         }];
     }
+}
+
+- (IBAction)segControlClicked:(id)sender {
+    NSLog(@"you clicked on: %ld", (long)[sender selectedSegment]);
 }
 
 - (void)_windowClosed:(NSNotification *)note {
@@ -114,13 +124,11 @@
     SonosController *controller = [[SonosManager sharedInstance] currentDevice];
     
     [controller getVolume:^(NSInteger volume, NSDictionary *response, NSError *error){
-        //NSLog(@"response: %@", response);
-        //NSLog(@"volume: %ld", (long)volume);
-        //NSLog(@"error: %@", error);
+        
     }];
     
 }
-- (IBAction)setVolume:(id)sender {
+- (IBAction) setVolume:(id)sender {
 // I guess here I can enclose this in a loop with all the devices I want to controll.
     
     SonosController *controller = [[SonosManager sharedInstance] currentDevice];
