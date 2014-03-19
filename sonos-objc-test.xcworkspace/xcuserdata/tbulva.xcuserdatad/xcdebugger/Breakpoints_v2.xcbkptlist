@@ -50,11 +50,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "sonos-objc-test/SonosManager.m"
-            timestampString = "416947259.049836"
+            timestampString = "416961484.888849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "-init"
             landmarkType = "5">
          </BreakpointContent>
@@ -66,11 +66,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "sonos-objc-test/AppDelegate.m"
-            timestampString = "416954962.547347"
+            timestampString = "416961484.888849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
             landmarkType = "5">
             <Actions>
@@ -91,11 +91,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "sonos-objc-test/AppDelegate.m"
-            timestampString = "416954962.547347"
+            timestampString = "416961484.888849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-_closeAndSendAction:"
             landmarkType = "5">
             <Actions>

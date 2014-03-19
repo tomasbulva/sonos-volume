@@ -20,6 +20,8 @@
 -(void)awakeFromNib{
     [[SonosManager sharedInstance] addObserver:self forKeyPath:@"allDevices" options:NSKeyValueObservingOptionNew context:NULL];
     
+    currentRoomIndex = 0;
+    
     NSImage *image = [NSImage imageNamed:@"status"];
 	NSImage *alternateImage = [NSImage imageNamed:@"status-selected"];
 	_statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];

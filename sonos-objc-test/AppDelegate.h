@@ -14,6 +14,7 @@
     NSSlider *_SliderVolume;
     NSWindow *_window;
     NSEvent *_eventMonitor;
+    int currentRoomIndex;
 }
 
 @property (assign) IBOutlet NSWindow *window;
